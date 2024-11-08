@@ -1,83 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <center>
-            <table border="0">
-                <tr>
-                    <td><h1>Agencia de Viajes "Looking for Paradise" </h1></td>
-                    <td><img src="img/img02.jpg" alt="imagen" 
-                        width="100" height="100"></td>
-                </tr>    
-            </table>
-        </center>    
-        <nav align="center">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="catalago.html">Catálogo de destinos</a>
-            <a href="suscripcion.html">Suscripción</a>
-        </nav>             
-    </header>
-    <center>        
-        <h1>CATÁLOGO DE DESTINOS </h1>
-        <table border="1">
-            <tr>
-                <td align="center"><b><font size="5">CUSCO</font></b></td>
-                <td align="center"><b><font size="5">AREQUIPA</font></b></td>
-                <td align="center"><b><font size="5">TRUJILLO</font></b></td>
-            </tr>
-            <tr>
-                
-                <td><img src="img/cusco1.jpg" alt="imagen" 
-                    width="300" height="200"></td>
-                <td><img src="img/aqp02.jpg"alt="imagen" 
-                    width="300" height="200"></td>
-                <td><img src="img/trujillo03.jpg"alt="imagen" 
-                        width="300" height="200"></td>
-                
-                        
-            </tr>
-            <tr>
-                <td align="center"><b><font size="5">CAJAMARCA</font></b></td>
-                <td align="center"><b><font size="5">AYACUCHO</font></b></td>
-                <td align="center"><b><font size="5">IQUITOS</font></b></td>
-            
-            <title>Centrar Tabla con Margin Auto</title>
-</tr>
-            <tr></tr>
-            <td><img src="img/cajamarca-1.jpg" alt="imagen" 
-                width="300" height="200"></td>
-            <td><img src="img/ayacucho04.jpg" alt="imagen" 
-                width="300" height="200"></td>
-            <td><img src="img/iquitos06.jpeg" alt="imagen" 
-                width="300" height="200"></td>
-
-              
-
-                
-            </tr>            
-        </table>
-    </center>
-    <footer>
-        <div align="center">
-            <p>Todos los derechos resevados &copy;</p>
+  <!-- Encabezado principal: Debe incluir el título de la página y un menú de navegación con tres enlaces: "Inicio", "Acerca de", y "Contacto". -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pacari travel</a>
+        <img src="img/Avion1.png" alt="imagen" width="50" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalago.html">Cátalogo de destinos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="suscripcion.html">Suscripción</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  </header>
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Buscar Viaje</h1>
+    <form>
+      <div class="row align-items-start">
+        <div class="col-md-4 mb-3">
+          <label for="fechaDesde">Fecha Desde</label>
+          <input type="date" class="form-control" id="fechaDesde" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="fechaHasta">Fecha Hasta</label>
+          <input type="date" class="form-control" id="fechaHasta" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          </br>
+          <button type="submit" class="btn btn-success w-100 h-100">Buscar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container">
+    <br>
+    <br>
+    <h2>Catálogo de destinos</h2>
+    <div class="row mt-5 mb-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/cusco1.jpg" class="card-img-top" alt="Playa la Mina" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Cusco</h5>
+            <p class="card-text">S/ 100.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/aqp02.jpg" class="card-img-top" alt="Lunahuaná" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Arequipa</h5>
+            <p class="card-text">S/ 150.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/trujillo03.jpg" class="card-img-top" alt="Chancay-Huaral" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Trujillo</h5>
+            <p class="card-text">S/89.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-5">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/cajamarca-1.jpg" class="card-img-top" alt="Playa la Mina" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Cajamarca</h5>
+            <p class="card-text">S/ 230.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/ayacucho04.jpg" class="card-img-top" alt="Lunahuaná" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Ayacucho</h5>
+            <p class="card-text">S/ 750.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/iquitos06.jpeg" class="card-img-top" alt="Chancay-Huaral" width="500" height="400">
+          <div class="card-body">
+            <h5 class="card-title">Iquitos</h5>
+            <p class="card-text">S/890.00</p>
+            <button class="btn btn-outline-success">Cotizar</button>
+            <button class="btn btn-success">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-primary text-white mt-5 p-4">
+    <div class="container">
+      <div class="row">
+        <!-- Sección de Información -->
+        <div class="col-md-4 mb-3">
+          <h5>Acerca de Nosotros</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna nec nulla suscipit scelerisque.
+          </p>
         </div>
 
-        <div  < align="center">
-
-            <a href="www.tiktok.com" target="_blank">Tiktok</a>
-            <a href="https://github.com/" target="_blank">GitHub</a>
-            <a href="https://facebook.com/" target="_blank">Facebook</a>
-            <a href="www.instagram.com" target="_blank">Instagram</a>
-            <a href="www.Whatsapp.com" target="_blank">Whatsapp</a>
-            
-
+        <!-- Sección de Enlaces Rápidos -->
+        <div class="col-md-4 mb-3">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+            <li><a href="catalago.html" class="text-white">Catálogo de destinos</a></li>
+            <li><a href="suscripcion.html" class="text-white">Suscripción</a></li>
+          </ul>
         </div>
-</footer>    
+
+        <!-- Sección de Redes Sociales -->
+        <div class="col-md-4 mb-3">
+          <h5>Síguenos</h5>
+          <a href="https://www.facebook.com/pacaritravelsac" class="text-white me-3"><i class="bi bi-facebook"></i>
+            Facebook</a>
+          <a href="https://wa.me/51943595064" class="text-white me-3"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+
+
+      <div class="text-center">
+        <p>&copy; 2024 Pacari Travel. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
